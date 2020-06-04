@@ -1,6 +1,6 @@
 Please run the fils in the following order:
 1. data_preprocessing.ipynb 
-This is for preprocessing the data collected in the dataset and get the queries.txt and docs.txt for the LSTM model.
+This is for preprocessing the data collected in the dataset. It returns three txt files: queries.txt, docs.txt, and combined_tweets.txt. The queries.txt and dovs.txt will later be used to train the DSSM-LSTM model. The combined_tweets.txt contains all tweets each user have in the dataset. It will be used to create semantic sentence embedding vector for each user. 
 2. main_LSTM.ipynb
 This is for training the model to learn the semantic meaning behind the sentences and give semantic sentence embedding vector for each users. The distance between two vectors is close if they are both used to present a similar stand.
 Note: model_LSTM.py, cells.py are required here.
